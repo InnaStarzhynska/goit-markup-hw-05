@@ -239,7 +239,7 @@ p {
 
     opacity: 1;
 
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -269,7 +269,10 @@ p {
 }
 
 .button-modal-close {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 30px;
     height: 30px;
     margin-left: auto;
@@ -439,6 +442,7 @@ p {
 .social-link {
     display: inline-block;
     padding: 12px;
+    border-radius: 50%;
     
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -447,7 +451,6 @@ p {
 .social-link:hover, .social-link:focus {
     cursor: pointer;
     background-color: var(--accent-color);
-    border-radius: 50%;
     
 }
 
